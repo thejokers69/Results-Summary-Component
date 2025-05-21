@@ -7,9 +7,13 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+    <div className="min-h-screen flex flex-col bg-background dark:bg-gray-900 transition-colors duration-200">
       <Navbar />
-      <main className="flex-1 container mx-auto mt-2">{children}</main>
+      <div className="flex-1 flex flex-col">
+        <div className="flex-1">
+          <main className="container mx-auto px-4 py-4">{children}</main>
+        </div>
+      </div>
     </div>
   );
 }
