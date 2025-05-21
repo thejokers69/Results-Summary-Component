@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ export default function Layout({ children }: LayoutProps) {
           <main className="container mx-auto px-4 py-4">{children}</main>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
