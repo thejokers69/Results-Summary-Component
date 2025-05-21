@@ -1,0 +1,42 @@
+.
+├── eslint.config.js
+├── index.html
+├── package.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── project_structure.txt
+├── public
+├── README.md
+├── src
+│   ├── App.tsx
+│   ├── assets
+│   │   ├── fonts
+│   │   │   ├── HankenGrotesk-VariableFont_wght.ttf
+│   │   │   ├── README.txt
+│   │   │   └── static
+│   │   │       ├── HankenGrotesk-Bold.ttf
+│   │   │       ├── HankenGrotesk-ExtraBold.ttf
+│   │   │       └── HankenGrotesk-Medium.ttf
+│   │   └── images
+│   │       ├── favicon-32x32.png
+│   │       ├── icon-memory.svg
+│   │       ├── icon-reaction.svg
+│   │       ├── icon-verbal.svg
+│   │       └── icon-visual.svg
+│   ├── components
+│   │   ├── ResultSection.tsx
+│   │   ├── SummaryCard.tsx
+│   │   └── SummarySection.tsx
+│   ├── data.json
+│   ├── main.tsx
+│   ├── pages
+│   │   └── ResultsSummary.tsx
+│   ├── styles
+│   │   └── global.css
+│   └── vite-env.d.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
+10 directories, 30 files
