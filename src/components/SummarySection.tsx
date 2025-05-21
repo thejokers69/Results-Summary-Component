@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge";
+import "../styles/global.css";
 
 interface SummarySectionProps {
   categories: { category: string; score: number; icon: string }[];
@@ -9,13 +10,13 @@ const SummarySection = ({ categories, onContinue }: SummarySectionProps) => {
   const getCategoryStyles = (category: string) => {
     switch (category) {
       case "Reaction":
-        return "bg-light-red/10 text-light-red";
+        return "bg-red-200 text-red-600";
       case "Memory":
-        return "bg-orangey-yellow/10 text-orangey-yellow";
+        return "bg-yellow-200 text-yellow-600";
       case "Verbal":
-        return "bg-green-teal/10 text-green-teal";
+        return "bg-green-200 text-green-600";
       case "Visual":
-        return "bg-cobalt-blue/10 text-cobalt-blue";
+        return "bg-blue-200 text-blue-600";
       default:
         return "";
     }

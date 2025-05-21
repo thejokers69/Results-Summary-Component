@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import ResultSection from "./ResultSection";
 import SummarySection from "./SummarySection";
+import "../styles/global.css";
 
 interface SummaryCardProps {
   averageScore: number;
