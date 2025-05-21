@@ -1,16 +1,15 @@
 // import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./styles/global.css";
-import ResultsSummary from "./pages/ResultsSummary";
-function App() {
+import Layout from "./Layout";
+import Routes from "./routes";
+
+export default function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<ResultsSummary />} />
-        <Route path="/next" element={<div>Next page(Placeholder)</div>} />
-      </Routes>
+      <Layout>
+        <Routes />
+      </Layout>
     </Router>
   );
 }
-
-export default App;
